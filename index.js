@@ -71,7 +71,8 @@ function removeFromCart(item) {
    var removeItem = cart.splice(i, 1);  
   return cart; 
 }
-else return "That item is not in your cart."}
+}
+else return "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {
