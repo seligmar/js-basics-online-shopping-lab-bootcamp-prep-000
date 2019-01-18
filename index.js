@@ -79,11 +79,11 @@ function total() {
 
 function removeFromCart(item) {
   if (cart[item] === undefined) {return "That item is not in your cart."} 
-  var found = false;
+  // var found = false;
     for (var key in cart) {
     var theItem = Object.keys(cart[key]).toLocaleString();
     if ( item === theItem ) {
-      found = true;
+      // found = true;
         cart.splice(Number(key), 1);
   }
 }
