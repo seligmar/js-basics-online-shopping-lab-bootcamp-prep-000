@@ -66,14 +66,13 @@ function total() {
 // HINT: Check each object's itemName value key to see if it matches the parameter, then remove it if it matches. You might find Array.prototype.splice() to be   
 
 function removeFromCart(item) {
-  { for (var i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) { 
-   var removeItem = cart.splice(i, 1);  
-   
+   var removeItem = cart.splice(i, 1); }   
+   {if (cart[i].itemName !== item) {return "That item is not in your cart." }}
   return cart; 
 }  } 
-{if (cart[i].itemName !== item) {return "That item is not in your cart." }}
-} }
+}
 
 function placeOrder(cardNumber) {
   var cartTotal = total();  
