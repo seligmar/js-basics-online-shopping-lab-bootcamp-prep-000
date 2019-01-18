@@ -63,9 +63,7 @@ function total() {
 
 // The removeFromCart() function accepts one argument, the name of the item that should be removed.
 // If the item is present in the cart, the function should remove the object from the cart and then return the updated cart.
-// HINT: Check each object's itemName value key to see if it matches the parameter, then remove it if it matches. You might find Array.prototype.splice() to be useful.
-
-    //   
+// HINT: Check each object's itemName value key to see if it matches the parameter, then remove it if it matches. You might find Array.prototype.splice() to be   
 
 function removeFromCart(item) {
   if (cart[item] === undefined) {return "That item is not in your cart."} 
