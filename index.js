@@ -73,22 +73,10 @@ function removeFromCart(item) {
   // if (cart[i].itemName === item) {
   //   var removeItem = 
   getCart(); 
-    delete cart[item];  
+   var  delete cart[item];  
   return cart; 
 }
 
-
-function removeFromCart(item) {
-  if (cart[item] === undefined) {return "That item is not in your cart."} 
-  var present = false; 
-  if (cart.length > 0) {
-  for (var i = 0; i < cart.length; i++){
-    if (cart[i].hasOwnProperty(item) === true){
-      cart.splice(i, 1)
-      return cart
-    }
-  }
-}
 
 function placeOrder(cardNumber) {
   var cartTotal = total();  
