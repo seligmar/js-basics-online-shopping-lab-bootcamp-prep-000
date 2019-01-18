@@ -69,10 +69,10 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) { 
    var removeItem = cart.splice(i, 1); }   
-   else {return "That item is not in your cart." }}
+
   return cart; 
 }
-
+   else {return "That item is not in your cart." }}
 function placeOrder(cardNumber) {
   var cartTotal = total();  
 if (cardNumber === undefined) { return "Sorry, we don't have a credit card on file for you." } 
