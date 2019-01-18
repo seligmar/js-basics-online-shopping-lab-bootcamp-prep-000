@@ -67,28 +67,16 @@ function total() {
 
     //   
 
-// function removeFromCart(item) {
-//   if (cart[item] === undefined) {return "That item is not in your cart."} 
-//   // for (var i = 0; i < cart.length; i++) {
-//   // if (cart[i].itemName === item) {
-//   //   var removeItem = 
-//   getCart(); 
-//     delete cart[item];  
-//   return cart; 
-// }
+function removeFromCart(item) {
+  if (cart[item] === undefined) {return "That item is not in your cart."} 
+  // for (var i = 0; i < cart.length; i++) {
+  // if (cart[i].itemName === item) {
+  //   var removeItem = 
+  getCart(); 
+    delete cart[item];  
+  return cart; 
+}
 
-// function removeFromCart(item) {
-//   if (cart[item] === undefined) {return "That item is not in your cart."} 
-//   // var found = false;
-//     for (var key in cart) {
-//     var theItem = Object.keys(cart[key]).toLocaleString();
-//     if ( item === theItem ) {
-//       // found = true;
-//         cart.splice(Number(key), 1);
-//   }
-// }
-// return cart;
-// }
 
 function removeFromCart(item) {
   if (cart[item] === undefined) {return "That item is not in your cart."} 
@@ -100,10 +88,6 @@ function removeFromCart(item) {
       return cart
     }
   }
-  }
-      // present = true}}}
-  // if (present === false){console.log('That item is not in your cart.')}
-  // return cart
 }
 
 function placeOrder(cardNumber) {
