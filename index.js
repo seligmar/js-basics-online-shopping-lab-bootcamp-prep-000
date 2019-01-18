@@ -67,15 +67,15 @@ function total() {
 
     //   
 
-function removeFromCart(item) {
-  if (cart[item] === undefined) {return "That item is not in your cart."} 
-  // for (var i = 0; i < cart.length; i++) {
-  // if (cart[i].itemName === item) {
-  //   var removeItem = 
-  getCart(); 
-    delete cart[item];  
-  return cart; 
-}
+// function removeFromCart(item) {
+//   if (cart[item] === undefined) {return "That item is not in your cart."} 
+//   // for (var i = 0; i < cart.length; i++) {
+//   // if (cart[i].itemName === item) {
+//   //   var removeItem = 
+//   getCart(); 
+//     delete cart[item];  
+//   return cart; 
+// }
 
 
 function placeOrder(cardNumber) {
