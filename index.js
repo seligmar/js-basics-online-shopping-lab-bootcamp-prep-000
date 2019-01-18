@@ -77,18 +77,18 @@ function total() {
 //   return cart; 
 // }
 
-function removeFromCart(item) {
-  if (cart[item] === undefined) {return "That item is not in your cart."} 
-  // var found = false;
-    for (var key in cart) {
-    var theItem = Object.keys(cart[key]).toLocaleString();
-    if ( item === theItem ) {
-      // found = true;
-        cart.splice(Number(key), 1);
-  }
-}
-return cart;
-}
+// function removeFromCart(item) {
+//   if (cart[item] === undefined) {return "That item is not in your cart."} 
+//   // var found = false;
+//     for (var key in cart) {
+//     var theItem = Object.keys(cart[key]).toLocaleString();
+//     if ( item === theItem ) {
+//       // found = true;
+//         cart.splice(Number(key), 1);
+//   }
+// }
+// return cart;
+// }
 
 function placeOrder(cardNumber) {
   var cartTotal = total();  
